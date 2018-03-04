@@ -35,5 +35,6 @@ echo "kernel.randomize_va_space=2" >> /etc/sysctl.conf
 echo "fs.suid_dumpable=0" >> /etc/sysctl.conf
 echo "fs.protected_symlinks=1" >> /etc/sysctl.conf
 echo "fs.protected_hardlinks=1" >> /etc/sysctl.conf
+echo "net.ipv4.icmp_echo_ignore_all" >> /etc/sysctl.conf
 
 echo "The system configuration file has been secured."
