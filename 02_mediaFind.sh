@@ -5,7 +5,7 @@ mediaA=('.3gp' '.aa' '.aac' '.aax' '.act' '.aiff' '.amr' '.ape' '.au' '.awb' '.d
 mediaV=('.webm' '.mkv' '.flv' '.vob' '.ogv' '.ogg' '.drc' '.gif' '.mng' '.avi' '.mov' '.qt' '.wmv' '.yuv' '.rm' '.asf' '.amv' '.mp4' '.m4p' '.m4v' '.mpg' '.mp2' '.mpeg' '.mpe' '.mpv' '.m2v' '.m4v' '.svi' '.3gp' '.3g2' '.mxf' '.roq' '.nsv' '.f4v' '.f4p' '.f4a' '.f4b')
 mediaD=('.doc' '.docx' '.ppt' '.pptx' '.xls' '.xlsx' '.pdf' '.odt' '.ods' '.odp' '.odg' '.odf' '.xml' '.sxw' '.sxi' '.sxc' '.sxd' '.stw')
 mediaE=('.sh')
-mediaI=('.jpg' '.png' '.webp' '.svg' '.ai' '.eps' '.jpeg' '.jiff' '.jpe')
+mediaI=('.jpg' '.png' '.webp' '.svg' '.ai' '.eps' '.jpeg' '.jiff' '.jpe' '.img')
 
 echo "Search only '/home' [y/n]?"
 read fP
