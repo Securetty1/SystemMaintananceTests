@@ -4,7 +4,7 @@
 #The date and time are included in the file as well as the new scans appended (instead of overwriting the existing file)
 #in order to log activities.
 
-file=~/02_crontabFound.txt
+file=~/results/02_crontabFound.txt
 echo "Enter the number of users"
 read usrNum
 
