@@ -36,4 +36,4 @@ echo "fs.suid_dumpable=0" >> /etc/sysctl.conf
 echo "fs.protected_symlinks=1" >> /etc/sysctl.conf
 echo "fs.protected_hardlinks=1" >> /etc/sysctl.conf
 
-echo "The system configuration file has been secured. Review in order to ensure that they did not include any surprises earlier on within the file contradicting the security enhanced edition."
+echo "The system configuration file has been secured."
