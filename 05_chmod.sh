@@ -20,6 +20,18 @@ chgrp shadow /etc/shadow
  
 echo "Shadow file was and is secure"
 
+chmod 640 /etc/sudoers
+chown root /etc/sudoers
+chgrp root /etc/sudoers
+
+echo "Sudoers file is secure"
+
+chmod 640 /etc/group
+chown root /etc/group
+chgrp root /etc/group 
+
+echo "Group file is secure"
+
 chmod 700 /bin/ping
 chmod 700 /usr/bin/who
 chmod 700 /usr/bin/w
