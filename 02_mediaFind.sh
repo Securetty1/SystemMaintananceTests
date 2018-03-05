@@ -76,7 +76,7 @@ if [ $fD = "y" ] ; then
 
 	sort -u $files >> ${files[1]}
 	echo "" >> ${files[1]}
-	echo "Found Document files can be found in ${file[1]}"
+	echo "Found Document files can be found in ${files[1]}"
 fi
 
 #Finds Executable files on the system and outputs them to $file. It then sorts the $file so each file is only listed once.
