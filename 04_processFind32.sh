@@ -5,7 +5,7 @@ read bit
 bit=$bit'-bit'
 files=(~/results/processesFoundtmp.txt ~/results/04_processesFound.txt)
 
-sudo find /proc -name exe | xargs readlink | xargs file | grep $bit 2>/dev/null > $file
+sudo find /proc -name exe | xargs readlink | xargs file | grep $bit 2>/dev/null > $files
 
 if [ $? != 0 ] ; then
 	echo "No $bit processes found"
