@@ -19,12 +19,12 @@ chown root:root /etc/shadow
  
 echo "/etc/shadow file is secure"
 
-chmod 640 /etc/sudoers
+chmod 644 /etc/sudoers
 chown root:root /etc/sudoers
 
 echo "/etc/sudoers file is secure"
 
-chmod 640 /etc/group
+chmod 644 /etc/group
 chown root:root /etc/group
 
 echo "/etc/group file is secure"
