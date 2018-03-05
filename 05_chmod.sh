@@ -1,47 +1,51 @@
 #!/bin/bash
 
-echo "Execute file with sudo"
-echo ""
 echo "Indentify/secure file permissions of critical files"
+echo""
 
-chmod 644 /etc/passwd
-chown root:root /etc/passwd
+sudo chmod 644 /etc/passwd
+sudo chown root:root /etc/passwd
  
 echo "/etc/passwd file is secure"
+echo ""
 
-chmod 644 /etc/gshadow 
-chown root:root /etc/gshadow
+sudo chmod 644 /etc/gshadow 
+sudo chown root:root /etc/gshadow
 
 echo "/etc/gshadow file is secure" 
+echo ""
 
-chmod 400 /etc/shadow 
-chown root:root /etc/shadow
+sudo chmod 400 /etc/shadow 
+sudo chown root:root /etc/shadow
  
 echo "/etc/shadow file is secure"
+echo ""
 
-chmod 644 /etc/sudoers
-chown root:root /etc/sudoers
+sudo chmod 644 /etc/sudoers
+sudo chown root:root /etc/sudoers
 
 echo "/etc/sudoers file is secure"
+echo ""
 
-chmod 644 /etc/group
-chown root:root /etc/group
+sudo chmod 644 /etc/group
+sudo chown root:root /etc/group
 
 echo "/etc/group file is secure"
+echo ""
 
-chmod 700 /bin/ping
-chmod 700 /usr/bin/who
-chmod 700 /usr/bin/w
-chmod 700 /usr/bin/locate 
-chmod 700 /usr/bin/whereis
-chmod 700 /sbin/ifconfig 
-chmod 700 /bin/nano
-chmod 700 /usr/bin/vi
-chmod 700 /usr/bin/which
-chmod 700 /usr/bin/gcc
-chmod 700 /usr/bin/make
-chmod 700 /usr/bin/apt-get 
-chmod 700 /usr/bin/aptitude
+sudo chmod 700 /bin/ping
+sudo chmod 700 /usr/bin/who
+sudo chmod 700 /usr/bin/w
+sudo chmod 700 /usr/bin/locate 
+sudo chmod 700 /usr/bin/whereis
+sudo chmod 700 /sbin/ifconfig 
+sudo chmod 700 /bin/nano
+sudo chmod 700 /usr/bin/vi
+sudo chmod 700 /usr/bin/which
+sudo chmod 700 /usr/bin/gcc
+sudo chmod 700 /usr/bin/make
+sudo chmod 700 /usr/bin/apt-get 
+sudo chmod 700 /usr/bin/aptitude
  
 echo "Misc functions have been locked to root ownership"
 
