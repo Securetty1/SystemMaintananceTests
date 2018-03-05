@@ -4,17 +4,17 @@ echo "Execute file with sudo"
 echo ""
 echo "Indentify/secure file permissions of critical files"
 
-chmod 640 /etc/passwd
+chmod 644 /etc/passwd
 chown root:root /etc/passwd
  
 echo "/etc/passwd file is secure"
 
-chmod 640 /etc/gshadow 
+chmod 644 /etc/gshadow 
 chown root:root /etc/gshadow
 
 echo "/etc/gshadow file is secure" 
 
-chmod 640 /etc/shadow 
+chmod 400 /etc/shadow 
 chown root:root /etc/shadow
  
 echo "/etc/shadow file is secure"
