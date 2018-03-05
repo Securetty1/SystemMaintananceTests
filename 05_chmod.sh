@@ -1,24 +1,23 @@
 #!/bin/bash
 
-echo "Enter password"
-sudo su -
-
+echo "Execute file with sudo"
+echo ""
 echo "Indentify/secure file permissions of critical files"
 
 chmod 640 /etc/passwd
 chown root:root /etc/passwd
  
-echo "/etc/passwd file and is secure"
+echo "/etc/passwd file is secure"
 
 chmod 640 /etc/gshadow 
 chown root:root /etc/gshadow
 
-echo "/etc/gshadow file and is secure" 
+echo "/etc/gshadow file is secure" 
 
 chmod 640 /etc/shadow 
 chown root:root /etc/shadow
  
-echo "/etc/shadow file and is secure"
+echo "/etc/shadow file is secure"
 
 chmod 640 /etc/sudoers
 chown root:root /etc/sudoers
@@ -45,5 +44,6 @@ chmod 700 /usr/bin/apt-get
 chmod 700 /usr/bin/aptitude
  
 echo "Misc functions have been locked to root ownership"
+
 
 #New code: search for files with dogy file permissions:
