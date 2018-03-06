@@ -4,7 +4,7 @@ files=(~/results/03_foundBadPackages.txt ~/results/03_foundServerPackages ~/resu
 #The 'aPackage' array contains packages which you don't want to have on your system. These can be exact package names as well as keywords.
 aPackages=('hydra' 'medusa' 'netcat' 'nmap' '-ng' 'netdiscover' 'nikto' 'golismero' 'maltego' 'sparta' 'lynis' 'burpsuit' 'commix' 'httrack' 'john' 'ophcrack' 'cewl' 'sploit' 'attack' 'armitage' 'beef' 'backdoor' 'wireshark')
 #The 'bPackages' array contains packages you may want to install. The have to be exact package names that apt can recognise.
-bPackages=('rkhunter' 'chkrootkit' 'slay' 'libpam-cracklib' 'iptables' 'firefox-esr' 'auditd' 'sudo')
+bPackages=('rkhunter' 'chkrootkit' 'slay' 'libpam-cracklib' 'iptables' 'firefox-esr' 'auditd' 'sudo' 'denyhosts' 'fail2ban' 'clamav')
 #The 'cPackages' array contains packages you may want to use.
 cPackages=('samba' 'apache' 'ssh' 'bind9' 'sql' 'nginx' 'postgre' 'ftp' 'telnet')
 
