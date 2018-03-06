@@ -2,6 +2,10 @@
 
 echo "Type '32' to find 32-bit processes"
 read bit
+if [ -z $bit ] ; then
+	echo "No bit given, exiting"
+	exit
+fi
 bit=$bit'-bit'
 files=(~/results/processesFoundtmp.txt ~/results/04_processesFound.txt)
 
