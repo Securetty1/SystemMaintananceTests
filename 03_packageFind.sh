@@ -60,6 +60,8 @@ done
 rm ${files[3]}
 echo "Packages you may want to remove can be found in $files"
 
+exit
+
 echo "Remove bad packages [y/n]?"
 read rmP
 echo ""
