@@ -20,12 +20,10 @@ for r in `seq 1 ${#usrArray[@]}` ; do
 #	echo $?
 #	id ${usrArray[$r]} >> /dev/null
 #	echo $?
-	id ${usrArray[r]} 2>/dev/null 1>/dev/null
+	id ${usrArray[m]} 2>/dev/null 1>/dev/null
 	if [ $? != 0 ] ; then
 		echo "No such user. Try again"
 		exit
-	else
-		continue
 	fi
 done
 #echo "done"
@@ -38,11 +36,9 @@ echo "" >> $files
 for i in `seq 1 ${#usrArray[@]}` ; do
 	let N=i-1
 	sudo crontab -u ${usrArray[N]} -l 2>/dev/null 1>/dev/null
-	if [ $? != 0 ] ; then
-		echo "No crontabs for ${usrArray[N]}"
-	else
+	if [ $? = 0 ] ; then
 		echo "${usrArray[N]}" >> $files
-		echo "Running crontabs for ${usrArray[N]}"
+#		echo "Running crontabs for ${usrArray[N]}"
 	fi
 done
 
