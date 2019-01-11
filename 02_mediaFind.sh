@@ -11,6 +11,7 @@ mediaI=('.jpg' '.png' '.webp' '.svg' '.ai' '.eps' '.jpeg' '.jiff' '.jpe')
 echo "" > $file
 
 ###Add code that checks if the script is running in the background and if yes check for everything.
+#set -m
 #jobs | grep 02_mediaFind.sh 1>/dev/null 2>/dev/null
 #if [ $? = 0 ] ; then
 #	$fA=y
